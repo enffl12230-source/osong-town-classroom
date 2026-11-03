@@ -64,7 +64,9 @@ async function main() {
       assert.ok(await page.locator('#reset-progress').isVisible(), `${label}: reset is visible`);
       await page.locator('#reset-progress').click();
       assert.match(await page.locator('#progress-text').innerText(), /0\s*\/\s*5/);
-      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `${label}: no horizontal overflow`);
+      const overflow = await page.evaluate(() => ({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, offenders: [...document.querySelectorAll('body *')].map(e => ({ tag: e.tagName, class: e.className, right: e.getBoundingClientRect().right })).filter(e => e.right > innerWidth + 1).slice(0, 15) }));
+      console.log(`${label} overflow diagnostics`, JSON.stringify(overflow));
+      assert.ok(overflow.scrollWidth <= overflow.width, `${label}: no horizontal overflow`);
       assert.deepEqual(errors, [], `${label}: no uncaught JS errors`);
       await context.close();
     }
