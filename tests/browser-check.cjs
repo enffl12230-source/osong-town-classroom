@@ -50,7 +50,7 @@ async function main() {
       await cards.nth(0).click();
       await page.locator('#visit-place').click();
       assert.match(await page.locator('#progress-text').innerText(), /1\s*\/\s*5/);
-      assert.equal(await page.evaluate(() => document.activeElement.dataset.placeId), 'station', `${label}: focus returns to selected card`);
+      await page.waitForFunction(() => document.activeElement.dataset.placeId === 'station', null, { timeout: 3000 });
       await cards.nth(0).click();
       await page.locator('#visit-place').click();
       assert.match(await page.locator('#progress-text').innerText(), /1\s*\/\s*5/);
