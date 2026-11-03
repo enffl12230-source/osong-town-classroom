@@ -1,0 +1,45 @@
+const fs = require('fs');
+const path = require('path');
+const {execFileSync} = require('child_process');
+const dir = __dirname;
+const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const style = `
+@page{size:A4;margin:0}*{box-sizing:border-box}body{margin:0;color:#213c35;font-family:'Malgun Gothic',sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{position:relative;width:210mm;height:297mm;padding:15mm 17mm 13mm;overflow:hidden;page-break-after:always}.page:last-child{page-break-after:auto}.eyebrow{font-size:10pt;font-weight:bold;letter-spacing:.06em;color:#3a7661}.top{border-bottom:2px solid #245d4c;padding-bottom:4mm;margin-bottom:5mm}.title{font-size:25pt;font-weight:bold;line-height:1.25;letter-spacing:-.05em;margin:2mm 0}.sub{font-size:11pt;color:#506b63;line-height:1.6}.pill{display:inline-block;background:#e1f1e7;color:#245d4c;border-radius:50px;font-weight:bold;padding:2mm 4mm;font-size:10pt}.row{display:flex;gap:5mm}.box{border:1.2px solid #b5cfc2;border-radius:4mm;padding:4mm 5mm;margin:4mm 0;break-inside:avoid}.box h2{font-size:14pt;margin:0 0 2mm;color:#215849}.box p{font-size:11pt;line-height:1.6;margin:1mm 0}.num{display:inline-block;background:#245d4c;color:#fff;border-radius:50%;width:7mm;height:7mm;line-height:7mm;text-align:center;font-weight:bold;font-size:10pt;margin-right:2mm}h3{font-size:12pt;margin:3mm 0}p,li{font-size:10.5pt;line-height:1.65;margin:1mm 0}ul{padding-left:5mm;margin:2mm 0}.line{border-bottom:1px solid #a2b5ad;height:9mm}.draw{height:52mm;border:1px solid #a2b5ad;border-radius:3mm}.footer{position:absolute;left:17mm;right:17mm;bottom:8mm;border-top:1px solid #d7e3dc;padding-top:2mm;font-size:8pt;color:#637b71;display:flex;justify-content:space-between}.tag{font-size:9pt;color:#386e5a;font-weight:bold}.card{border:1px solid #bfd5c8;border-radius:4mm;padding:6mm;margin:5mm 0}.card h2{font-size:17pt;margin:0 0 3mm;color:#245d4c}.card p{font-size:12pt;line-height:1.7}.question{background:#f5f5ec;padding:3mm 4mm;border-radius:3mm;font-size:11pt;margin-top:3mm}.steps{display:grid;grid-template-columns:22mm auto;gap:3mm 4mm}.stepTime{font-weight:bold;color:#26624f;font-size:11pt}.steps p{margin:0 0 3mm;font-size:10pt}.teacher p,.teacher li{font-size:10pt}.small{font-size:8.5pt!important;line-height:1.5}.grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm}.drawing{height:49mm}.answer{border-bottom:1px solid #819d8d;display:inline-block;min-width:30mm}.check{font-size:11pt;line-height:2.1}.match{display:grid;grid-template-columns:1fr 1fr;gap:2mm;font-size:11pt;line-height:1.9}.sep{border:0;border-top:1px solid #e0e9e3;margin:5mm 0}
+`;
+const foot = (name, p) => `<div class="footer"><span>오송 동네 탐험대 · ${name}</span><span>${p}</span></div>`;
+const page = (body, name, n, cls='') => `<section class="page ${cls}">${body}${foot(name,n)}</section>`;
+const head = (label,title,sub) => `<div class="top"><div class="eyebrow">오송 동네 탐험대　 /　${label}</div><div class="title">${title}</div><div class="sub">${sub}</div></div>`;
+const student = page(`${head('학생 활동지','우리 동네를 만나요','2학년　<span class="answer" style="min-width:10mm"></span>반　　이름 <span class="answer" style="min-width:32mm"></span>　　날짜 <span class="answer" style="min-width:24mm"></span>')}
+<div class="box"><h2><span class="num">1</span>내가 살펴본 곳에 표시해요</h2><div class="check">□ 오송역　 □ 오송호수공원　 □ 오송도서관<br>□ 오송읍 행정복지센터　 □ 오송종합사회복지관</div></div>
+<div class="box"><h2><span class="num">2</span>어울리는 것을 선으로 이어요</h2><p>장소와 사람들이 하는 일을 연결해 보세요.</p><div class="match"><div>① 오송역　　·</div><div>· 책을 읽거나 빌려요.</div><div>② 오송도서관　·</div><div>· 기차를 타고 이동해요.</div><div>③ 오송호수공원 ·</div><div>· 산책하며 자연을 만나요.</div></div></div>
+<div class="box"><h2><span class="num">3</span>가 보고 싶은 곳을 그려요</h2><div class="draw drawing"></div><p>나는 <span class="answer"></span>에 가 보고 싶어요.</p><p>왜냐하면 <span class="answer" style="min-width:80mm"></span> 때문이에요.</p></div>`, '학생 활동지', '1 / 1');
+const intro = page(`${head('탐방 학습자료 1','우리 동네 탐험 출발!','오송에는 어떤 장소가 있을까요? 사람들이 무엇을 하는지 살펴보아요.')}
+<div class="box"><h2>이렇게 탐험해요</h2><p>① 웹페이지의 ‘우리 동네 지도’를 열어요.</p><p>② 지도 또는 장소 목록에서 가 보고 싶은 곳을 눌러요.</p><p>③ 장소와 사람들의 모습을 살피고 질문에 답해 보아요.</p><p>④ 세 곳 이상 둘러본 뒤 종이 활동지를 완성해요.</p></div>
+<div class="card"><div class="tag">01　이동하는 곳</div><h2>오송역</h2><p>사람들이 기차를 타고 여러 지역을 오가는 곳이에요. 역에서 기차를 기다리거나 여행을 시작해요.</p><div class="question">생각해요: 기차역에서는 어떤 사람들을 만날까요?</div></div>
+<div class="card"><div class="tag">02　쉬고 걷는 곳</div><h2>오송호수공원</h2><p>호수와 나무가 있는 공원이에요. 사람들은 이곳에서 산책하고 자연을 바라보며 쉬어요.</p><div class="question">생각해요: 공원에서 어떤 소리가 들릴까요?</div></div>
+<p class="small">장소 정보: 청주시 오송읍 기본현황, 청주시 관광 안내. 자세한 출처는 교사용 안내를 참고하세요.</p>`, '탐방 학습자료', '1 / 3');
+const explore2 = page(`${head('탐방 학습자료 2','책과 이웃을 만나요','마을의 장소마다 서로 다른 이야기가 있어요.')}
+<div class="card"><div class="tag">03　책을 만나는 곳</div><h2>오송도서관</h2><p>사람들이 책을 읽고 빌리는 곳이에요. 조용히 책을 살펴보고 새로운 이야기를 만날 수 있어요.</p><div class="question">생각해요: 도서관에서 어떤 책을 만나고 싶나요?</div></div>
+<div class="card"><div class="tag">04　마을의 일을 돕는 곳</div><h2>오송읍 행정복지센터</h2><p>마을 사람들이 생활에 필요한 도움과 안내를 받는 곳이에요. 마을의 여러 일을 함께 살펴요.</p><div class="question">생각해요: 도움이 필요할 때 누구에게 물어볼 수 있을까요?</div></div>
+<div class="box"><h2>둘러본 장소 기억하기</h2><p>지금까지 살펴본 곳 중 기억에 남는 장소는 어디인가요?</p><div class="line"></div><p>그곳에서 사람들이 하는 일을 한 가지 써 보아요.</p><div class="line"></div></div>`, '탐방 학습자료', '2 / 3');
+const explore3 = page(`${head('탐방 학습자료 3','함께 살아가는 우리','여러 사람이 한 마을에서 서로 도우며 살아가요.')}
+<div class="card"><div class="tag">05　이웃과 함께하는 곳</div><h2>오송종합사회복지관</h2><p>이웃이 만나고 여러 활동에 참여하며 필요한 도움을 나누는 곳이에요. 다양한 사람들이 함께 어울려요.</p><div class="question">생각해요: 이웃과 함께하면 어떤 점이 좋을까요?</div></div>
+<div class="box"><h2>우리 동네 관찰 대화</h2><p>친구와 함께 다음 질문을 이야기해 보아요.</p><p>① 다섯 장소 중 내가 가 본 곳은 어디인가요?</p><p>② 그곳에서 사람들이 무엇을 하고 있었나요?</p><p>③ 우리 마을에 또 어떤 장소가 있나요?</p></div>
+<div class="box"><h2>이제 활동지를 완성해요!</h2><p>살펴본 장소를 표시하고, 장소와 사람들이 하는 일을 연결해요.</p><p>가 보고 싶은 곳을 그림과 한 문장으로 소개해요.</p></div>`, '탐방 학습자료', '3 / 3');
+const teacher1 = page(`${head('교사용 안내 1','수업을 준비해요','2학년 통합교과 슬기로운 생활 · 40분')}
+<div class="box"><h2>교육과정과 목표</h2><p><b>[2슬02-01]</b> 우리가 살고 있는 마을과 사람들이 생활하는 모습을 살펴본다.</p><p><b>목표</b> 오송의 장소를 세 곳 이상 살펴보고 그곳에서 사람들이 하는 일을 말하며 가 보고 싶은 장소와 이유를 표현한다.</p><p><b>준비물</b> 학생별 기기, 인터넷, 학생 활동지 1쪽, 필기구·색연필, 필요시 탐방 학습자료.</p></div>
+<h3>40분 수업 흐름</h3><div class="steps"><div class="stepTime">시작 5분</div><p>가 본 동네 장소를 떠올린다. “그곳에서 사람들은 무엇을 했나요?”라고 묻고 탐방 방법을 안내한다.</p><div class="stepTime">탐방 15분</div><p>학생이 지도 또는 목록에서 장소를 3곳 이상 살펴본다. 장소 이름뿐 아니라 사람들이 하는 일에 주목하게 한다.</p><div class="stepTime">표현 15분</div><p>학생 활동지에 장소를 표시하고, 하는 일을 연결한다. 가 보고 싶은 곳을 그림과 한 문장으로 표현한다.</p><div class="stepTime">나눔 5분</div><p>장소와 이유를 짝 또는 전체와 나눈다. 마을의 다양한 장소와 사람들의 생활을 정리한다.</p></div>
+<div class="box"><h2>진행 도움말</h2><p>지도를 조작하기 어렵거나 연결이 불안정하면 장소 목록 또는 탐방 학습자료로 진행한다. 축척·등고선의 원리보다 장소와 사람들의 생활 관찰에 초점을 둔다.</p></div>`, '교사용 안내', '1 / 2', 'teacher');
+const teacher2 = page(`${head('교사용 안내 2','살펴보고 나누어요','학생의 경험과 서로 다른 생각을 존중하며 이야기해요.')}
+<div class="box"><h2>발문 예시</h2><p>“이 장소에서 사람들은 무엇을 하나요?”</p><p>“내가 가 본 곳과 닮은 점이나 다른 점은 무엇인가요?”</p><p>“우리 마을 사람들이 이곳을 이용하면 어떤 점이 좋을까요?”</p></div>
+<div class="box"><h2>활동지 정답과 표현 예시</h2><p><b>2번:</b> ① 오송역 - 기차를 타고 이동해요.　② 오송도서관 - 책을 읽거나 빌려요.　③ 오송호수공원 - 산책하며 자연을 만나요.</p><p><b>3번 예시:</b> “나는 오송호수공원에 가 보고 싶어요. 왜냐하면 호수를 보며 걷고 싶기 때문이에요.” 학생의 경험에 따른 다양한 답을 인정한다.</p></div>
+<div class="box"><h2>관찰 평가</h2><p>□ 오송의 장소 세 곳 이상을 살펴본다.</p><p>□ 한 장소에서 사람들이 하는 일을 말한다.</p><p>□ 가 보고 싶은 장소와 이유를 그림이나 글로 표현한다.</p></div>
+<h3>자료 출처</h3><p class="small">교육과정: 교육부 고시 제2022-33호 [별책 15], 바른 생활·슬기로운 생활·즐거운 생활 교육과정, [2슬02-01]. 한국 초등 학습 지도 MCP에서 확인.</p><p class="small">오송읍 기본현황: www.cheongju.go.kr/osong/contents.do?key=2192<br>오송도서관: lll.cheongju.go.kr/ccu/capp/C110503<br>오송호수공원: cjyu.cheongju.go.kr (청주여행정보 관광지)<br>지도: © OpenStreetMap contributors, www.openstreetmap.org/copyright</p>`, '교사용 안내', '2 / 2', 'teacher');
+const all=[student,intro,explore2,explore3,teacher1,teacher2];
+const groups={'student-worksheet':[student],'exploration-guide':[intro,explore2,explore3],'teacher-guide':[teacher1,teacher2],'full-set':all};
+for(const [name,pages] of Object.entries(groups)){
+ const html=path.join(dir,`${name}.html`), pdf=path.join(dir,`${name}.pdf`);
+ fs.writeFileSync(html,`<!doctype html><html lang="ko"><head><meta charset="UTF-8"><title>오송 동네 탐험대</title><style>${style}</style></head><body>${pages.join('')}</body></html>`);
+ execFileSync(chrome,['--headless','--disable-gpu','--no-pdf-header-footer',`--user-data-dir=${path.join(require('os').tmpdir(),'osong-pdf-chrome')}`,`--print-to-pdf=${pdf}`,`file:///${html.replace(/\\/g,'/')}`],{stdio:'pipe'});
+ console.log(pdf);
+}
