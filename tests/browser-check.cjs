@@ -35,6 +35,11 @@ async function main() {
       await page.screenshot({ path: `test-results/${label}-full.png`, fullPage: true });
       assert.equal(await page.locator('#places .place-card').count(), 5, `${label}: five place cards`);
       assert.equal(await page.locator('#map .leaflet-marker-icon').count(), 5, `${label}: five map markers`);
+      const mapBounds = await page.locator('#map').boundingBox();
+      for (const marker of await page.locator('#map .leaflet-marker-icon').all()) {
+        const box = await marker.boundingBox();
+        assert.ok(box && mapBounds && box.x >= mapBounds.x && box.y >= mapBounds.y && box.x + box.width <= mapBounds.x + mapBounds.width && box.y + box.height <= mapBounds.y + mapBounds.height, `${label}: marker is fully inside map`);
+      }
       const tiles = await page.locator('#map img.leaflet-tile-loaded').count();
       console.log(`${label}: ${tiles} map tiles loaded`);
       assert.ok(tiles > 0, `${label}: real OpenStreetMap tiles load`);

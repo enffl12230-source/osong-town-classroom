@@ -57,7 +57,7 @@ if (window.L) {
     marker.on('click',()=>openPlace(p,marker.getElement()));
   });
   const bounds=L.latLngBounds(places.map(p=>p.coords));
-  function fit(){map.fitBounds(bounds,{padding:[35,35],maxZoom:15});}
+  function fit(){map.fitBounds(bounds,{padding:[70,70],maxZoom:15});}
   fit(); $('#fit-map').addEventListener('click',fit); $('#retry-map').addEventListener('click',addTiles);
 } else { $('#map-error').hidden=false; $('#map').textContent='지도를 불러오지 못했어요. 아래 장소 목록을 이용해 주세요.'; $('#fit-map').disabled=true; $('#retry-map').addEventListener('click',()=>location.reload()); }
 
