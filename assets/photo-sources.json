@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "checkedOn": "2026-11-05",
   "canonicalData": "../data/places.json",
-  "usage": "무료 초등학교 교육용 웹페이지 및 활동지. 모든 사진의 상업적 이용은 금지됩니다. 오송역 사진은 변경도 금지됩니다.",
+  "usage": "무료 초등학교 교육용 웹페이지 및 활동지. 사진별 이용 조건을 따릅니다. 공공누리 사진의 상업적 이용은 금지되며 오송역 사진은 변경도 금지됩니다.",
   "photoNotice": "사진은 2024~2026년 공개 자료입니다. 게시일과 행사일을 구분해 표시했으며, 지금의 모습과 다를 수 있어요.",
   "photos": [
     {
@@ -37,65 +37,65 @@
       }
     },
     {
-      "placeId": "sunhamaru",
-      "place": "오송선하마루",
-      "file": "photos/osong-sunhamaru-2025.jpg",
-      "src": "assets/photos/osong-sunhamaru-2025.jpg",
-      "alt": "오송선하마루 행사장에서 버스 그림이 있는 안내판과 마이크 앞 발표자를 바라보는 사람들",
-      "caption": "오송선하마루에서 열린 행사 · 2025.11.05 행사일",
-      "title": "오송 자율주행 DRT운행개시 행사 사진 2",
+      "placeId": "osco",
+      "place": "청주오스코",
+      "file": "photos/osong-osco-exterior-2025.jpg",
+      "src": "assets/photos/osong-osco-exterior-2025.jpg",
+      "alt": "청주오스코의 길게 굽은 지붕과 유리 외벽, GATE A 출입문 앞 계단",
+      "caption": "청주오스코 외관 · 2025.09.24 게시(촬영일 미공개)",
+      "title": "청주오스코 외관",
       "author": "청주시청",
-      "date": "2025-11-05",
-      "dateKind": "event",
-      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
-      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
-      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682866.do",
-      "photoId": "682866",
+      "date": "2025-09-24",
+      "dateKind": "publication",
+      "dateEvidence": "청주시 건축상 보도자료 게시일이며 사진 촬영일은 공개되지 않았습니다.",
+      "sourceUrl": "https://www.cheongju.go.kr/www/selectBbsNttView.do?bbsNo=40&key=279&nttNo=242828",
+      "downloadUrl": "https://www.cheongju.go.kr/DATA/bbs/40/20250924062819029_mFgP.jpg",
       "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
       "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
       "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
       "preserveOriginal": true,
-      "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 2 · 2025-11-05 행사 · 공공누리 제2유형",
-      "width": 1192,
-      "height": 795,
+      "attribution": "사진: 청주시청 · 청주오스코 외관 · 2025.09.24 게시 · 공공누리 제2유형",
+      "width": 1164,
+      "height": 514,
+      "sha256": "B6DC880507C25042269EC5ECF523D9C7DDC9A649B9836440656D69777D2B629B",
       "coordinates": {
-        "lat": 36.62079167,
-        "lon": 127.3278
+        "lat": 36.626553,
+        "lon": 127.335014
       },
       "coordinateSource": {
-        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
-        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+        "url": "https://commons.wikimedia.org/wiki/File:20250607_청주_오스코_내부.jpg",
+        "note": "청주오스코 실제 내부 사진의 촬영 위치 GPS를 건물 대표점으로 사용. 공식 교통 안내의 만수리 275-5, 오송생명로 250 주소와 대조했으며 특정 출입구를 뜻하지 않습니다."
       }
     },
     {
-      "placeId": "sunhamaru",
-      "place": "오송선하마루",
-      "file": "photos/osong-sunhamaru-outside-2025.jpg",
-      "src": "assets/photos/osong-sunhamaru-outside-2025.jpg",
-      "alt": "오송선하마루 행사장 밖 지붕 아래 버스의 열린 문과 탑승하는 사람들",
-      "caption": "선하마루 행사장 밖 버스 시승 모습 · 2025.11.05 행사일",
-      "title": "오송 자율주행 DRT운행개시 행사 사진 19",
+      "placeId": "osco",
+      "place": "청주오스코",
+      "file": "photos/osong-osco-interior-2025.jpg",
+      "src": "assets/photos/osong-osco-interior-2025.jpg",
+      "alt": "큰 유리창 옆에 의자와 탁자가 놓인 청주오스코 실내 공간",
+      "caption": "청주오스코 실내 · 2025.09.24 게시(촬영일 미공개)",
+      "title": "청주오스코 실내",
       "author": "청주시청",
-      "date": "2025-11-05",
-      "dateKind": "event",
-      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
-      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
-      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682884.do",
-      "photoId": "682884",
+      "date": "2025-09-24",
+      "dateKind": "publication",
+      "dateEvidence": "청주시 건축상 보도자료 게시일이며 사진 촬영일은 공개되지 않았습니다.",
+      "sourceUrl": "https://www.cheongju.go.kr/www/selectBbsNttView.do?bbsNo=40&key=279&nttNo=242828",
+      "downloadUrl": "https://www.cheongju.go.kr/DATA/bbs/40/20250924062819035_UjMF.jpg",
       "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
       "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
       "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
       "preserveOriginal": true,
-      "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 19 · 2025-11-05 행사 · 공공누리 제2유형",
-      "width": 1192,
-      "height": 795,
+      "attribution": "사진: 청주시청 · 청주오스코 실내 · 2025.09.24 게시 · 공공누리 제2유형",
+      "width": 1068,
+      "height": 708,
+      "sha256": "5F25FC5939AF92925064121212234F59419C01916D5EADB55D886A4EC79FCE06",
       "coordinates": {
-        "lat": 36.62079167,
-        "lon": 127.3278
+        "lat": 36.626553,
+        "lon": 127.335014
       },
       "coordinateSource": {
-        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
-        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+        "url": "https://commons.wikimedia.org/wiki/File:20250607_청주_오스코_내부.jpg",
+        "note": "청주오스코 실제 내부 사진의 촬영 위치 GPS를 건물 대표점으로 사용. 공식 교통 안내의 만수리 275-5, 오송생명로 250 주소와 대조했으며 특정 출입구를 뜻하지 않습니다."
       }
     },
     {
@@ -191,9 +191,5 @@
         "note": "기존 지도 자료의 시설 대표 좌표를 유지하고 청주시 오송읍 공식 오시는 길의 가로수로 174 주소와 대조. 회의실이나 촬영 지점의 별도 좌표는 아닙니다."
       }
     }
-  ],
-  "photoDbLicenseEvidence": {
-    "exactPageLabel": "제2유형 : 출처표시 + 상업적 이용금지 - 공공누리 공공저작물 자유이용허락",
-    "noticeUrl": "https://photo.cheongju.go.kr/photo/selectBbsNttView.do?bbsNo=1&key=412&nttNo=39"
-  }
+  ]
 }

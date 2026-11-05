@@ -9,7 +9,7 @@ async function loadExplorer() {
     const response = await fetch('data/places.json', {signal:controller.signal, cache:'no-cache'});
     if (!response.ok) throw new Error('Place data unavailable');
     const data = await response.json();
-    const expected = ['station','sunhamaru','park','health','center'];
+    const expected = ['station','osco','park','health','center'];
     if (!data || data.schemaVersion !== 1 || !Array.isArray(data.places) || data.places.length !== expected.length) throw new Error('Invalid place data');
     const groups = new Map();
     data.places.forEach((place, index) => {
@@ -45,8 +45,8 @@ const $ = (selector) => document.querySelector(selector);
 const dialog = $('#place-dialog');
 const photoDialog = $('#photo-dialog');
 const placesEl = $('#places');
-const VISIT_KEY = 'osong-explorer-visited-v3';
-const NOTE_KEY = 'osong-explorer-notebook-v2';
+const VISIT_KEY = 'osong-explorer-visited-v4';
+const NOTE_KEY = 'osong-explorer-notebook-v3';
 $('#progress-bar').setAttribute('role', 'progressbar');
 $('#progress-bar').setAttribute('aria-label', '다섯 곳 중 도장을 받은 장소 수');
 $('#progress-bar').setAttribute('aria-valuemin', '0');
@@ -293,7 +293,11 @@ function addTiles() {
   tiles.on('tileload', () => { if (tileFailures === 0) $('#map-error').hidden = true; }); tiles.addTo(map);
 }
 if (window.L) {
-  map = L.map('map', {scrollWheelZoom:false}); addTiles();
+  map = L.map('map', {scrollWheelZoom:false});
+  const bounds = L.latLngBounds(places.map(place => place.coords));
+  const fit = () => map.fitBounds(bounds, {padding:[map.getSize().x < 600 ? 32 : 70,60], maxZoom:15});
+  // Set the first view before adding markers so their DOM and keyboard handlers exist.
+  fit(); addTiles();
   const markerGroups = new Map();
   places.forEach(place => {
     const key = place.mapGroup || place.coords.join(',');
@@ -330,7 +334,7 @@ if (window.L) {
         element?.setAttribute('aria-expanded', 'true');
         picker.querySelector('button')?.focus({preventScroll:true});
       });
-      marker.on('popupclose', () => { element?.setAttribute('aria-expanded', 'false'); });
+      marker.on('popupclose', () => { element?.setAttribute('aria-expanded', 'false'); element?.focus({preventScroll:true}); });
     } else marker.on('click', openMarker);
     if (element) {
       element.dataset.mapGroup = first.mapGroup || first.id;
@@ -343,9 +347,7 @@ if (window.L) {
       });
     }
   });
-  const bounds = L.latLngBounds(places.map(place => place.coords));
-  const fit = () => map.fitBounds(bounds, {padding:[70,70], maxZoom:15});
-  fit(); $('#fit-map').addEventListener('click', fit); $('#retry-map').addEventListener('click', addTiles);
+  $('#fit-map').addEventListener('click', fit); $('#retry-map').addEventListener('click', addTiles);
 } else {
   showMapFallback(); $('#map').textContent = '지도를 불러오지 못했어요. 아래 장소 카드와 그림 지도로 계속 탐험할 수 있어요.';
   $('#fit-map').disabled = true; $('#retry-map').addEventListener('click', () => location.reload());

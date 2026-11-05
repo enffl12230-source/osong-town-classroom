@@ -44,7 +44,12 @@ async function main() {
       page.on('pageerror', e => errors.push(e.message));
       await ready(page, base);
       assert.equal(await page.locator('#places .place-card').count(), 5);
-      assert.equal(await page.locator('#map .leaflet-marker-icon').count(), 4);
+      assert.equal(await page.locator('#map .leaflet-marker-icon').count(), 5);
+      const markerBoxes = await Promise.all((await page.locator('#map .leaflet-marker-icon').all()).map(marker => marker.boundingBox()));
+      for (let a = 0; a < markerBoxes.length; a++) for (let b = a + 1; b < markerBoxes.length; b++) {
+        const one = markerBoxes[a], two = markerBoxes[b];
+        check(Math.hypot(one.x - two.x, one.y - two.y) >= 46, `${label}: map places ${a + 1}/${b + 1} are separately selectable`);
+      }
       await noOverflow(page, label);
       await page.screenshot({ path: `test-results/${label}-hero.png` });
       for (const card of await page.locator('#places .place-card').all()) await card.scrollIntoViewIfNeeded();
@@ -55,7 +60,6 @@ async function main() {
       for (const place of places) {
         const group = place.mapGroup || place.id;
         await page.locator(`#map [data-map-group="${group}"]`).click();
-        if (group === 'station') await page.locator(`.map-place-choice[data-place-id="${place.id}"]`).click();
         check((await page.locator('#dialog-title').innerText()).includes(place.name), `${label}: map opens ${place.name}`);
         await page.keyboard.press('Escape');
         check(!(await page.locator('#place-dialog').evaluate(d => d.open)), `${label}: Escape closes place dialog`);
@@ -63,6 +67,16 @@ async function main() {
       for (const [i, place] of places.entries()) {
         await page.locator(`#places [data-place-id="${place.id}"]`).click();
         await page.waitForFunction(() => document.querySelector('#dialog-photo').naturalWidth > 0);
+        if (place.extraPhotos?.length) {
+          await page.locator('.photo-choice').nth(1).click();
+          assert.equal(await page.locator('#dialog-photo').getAttribute('src'), place.extraPhotos[0].src);
+          await page.locator('#zoom-photo').click();
+          assert.equal(await page.locator('#large-photo').getAttribute('src'), place.extraPhotos[0].src);
+          await page.keyboard.press('Escape');
+          await page.locator('.photo-choice').first().click();
+          assert.equal(await page.locator('#dialog-photo').getAttribute('src'), place.photo.src);
+          check(true, `${label}: OSCO gallery and enlargement use the selected photograph`);
+        }
         check(await page.locator('#visit-place').isDisabled(), `${label}: stamp requires correct answer`);
         const wrong = (place.quiz.answer + 1) % 3;
         await page.locator('.quiz-option').nth(wrong).click();

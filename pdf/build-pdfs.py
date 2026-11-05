@@ -75,16 +75,14 @@ def new_pdf(name,title):
 def map_schematic(c,x,y,w,h,data):
     """Spatial relation diagram based on published place coordinates, not route map."""
     box(c,x,y,w,h,HexColor('#f3f6ef'),LINE)
-    # Simple coordinate-based markers; one anchor is shared by the station and lounge.
+    # Five separate markers use the canonical geographic coordinates.
     c.setFillColor(HexColor('#dae8d7'));c.ellipse(x+15,y+30,x+w*.58,y+h-15,fill=1,stroke=0)
     lats=[p['coords'][0] for p in data];lons=[p['coords'][1] for p in data]
     def pt(p):
         return (x+70+(p['coords'][1]-min(lons))/(max(lons)-min(lons) or 1)*(w-140),
                 y+50+(p['coords'][0]-min(lats))/(max(lats)-min(lats) or 1)*(h-90))
     for p in data:
-        if p['id']=='sunhamaru':continue
         px,py=pt(p);n=str(p['number']).zfill(2).lstrip('0');name=p.get('shortName',p['name'])
-        if p['id']=='station':n='1/2';name='오송역 · 선하마루'
         c.setFillColor(TEAL);c.circle(px,py,13,fill=1,stroke=0)
         txt(c,n,px-pdfmetrics.stringWidth(n,'Jua',11)/2,py-4,11,'Jua',white)
         tw=pdfmetrics.stringWidth(name,'Gowun',10)
@@ -103,7 +101,7 @@ def worksheet(data):
     section(c,1,'찾아본 장소에 동그라미 해요',649)
     map_schematic(c,39,358,517,265,data)
     txt(c,'위치 관계를 단순화한 지도 · 축척 없음 · 실제 길찾기 지도가 아니에요.',43,342,9,color=GRAY)
-    txt(c,'1·2번: 오송선하마루는 오송역 2층 3번 출구·B주차장 방면에 있어요.',43,328,8.5,color=GRAY)
+    txt(c,'1번 오송역과 2번 청주오스코를 각각 찾아보세요.',43,328,8.5,color=GRAY)
     section(c,2,'장소와 하는 일을 선으로 이어요',307)
     roles=[data[i]['roleLabel']+'.' for i in [4,2,0,1,3]]
     for yy,p,role in zip([269,239,209,179,149],data,roles):
@@ -237,7 +235,7 @@ def main():
                      'credit':f"사진: {ph['author']} / {ph['title']} / 전체 화면·원본 비율 유지",
                      'source':ph['sourceUrl'],'license':ph['license'],'licenseUrl':ph['licenseUrl']})
     assert len(data)==5
-    assert [p['id'] for p in data]==['station','sunhamaru','park','health','center']
+    assert [p['id'] for p in data]==['station','osco','park','health','center']
     for p in data: assert (ROOT/p['photo']).is_file(),p['photo']
     worksheet(data);exploration(data);teachers(data)
     writer=PdfWriter()

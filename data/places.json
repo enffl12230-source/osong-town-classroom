@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "checkedOn": "2026-11-05",
   "photoNotice": "사진은 2024~2026년 공개 자료입니다. 게시일과 행사일을 구분해 표시했으며, 지금의 모습과 다를 수 있어요.",
-  "mapNotice": "지도는 장소의 대표 위치를 보여 줘요. 오송역과 선하마루는 같은 위치 그룹이며 선하마루는 역 2층 3번 출구 방면이에요.",
+  "mapNotice": "지도는 오송의 다섯 장소를 각각 표시해요. 표시는 시설의 대표 위치이며 출입구나 실제 걷는 길을 뜻하지 않아요.",
   "places": [
     {
       "id": "station",
@@ -66,90 +66,93 @@
       "roleLabel": "다른 지역으로 이동해요"
     },
     {
-      "id": "sunhamaru",
+      "id": "osco",
       "number": "02",
-      "name": "오송선하마루",
-      "shortName": "선하마루",
+      "name": "청주오스코",
+      "shortName": "청주오스코",
       "emoji": "🎨",
       "coords": [
-        36.62079167,
-        127.3278
+        36.626553,
+        127.335014
       ],
-      "mapGroup": "station",
-      "mapNote": "오송역 2층 3번 출구·B주차장 방면이에요. 역과 같은 대표 위치로 표시했어요.",
-      "address": "충청북도 청주시 흥덕구 오송읍 오송가락로 132, 오송역 2층 3번 출구 방면",
-      "short": "만나고 배우는 곳",
-      "desc": "오송선하마루는 오송역 철길 아래 공간에 만든 문화 공간이에요. 사람들이 만나 이야기를 나누고, 전시와 여러 활동을 함께해요.",
-      "people": "사람들이 모여 이야기를 듣거나 회의하고 쉬어요. 사진은 이곳에서 열린 버스 운행 시작 행사예요.",
-      "question": "친구들과 이런 공간에 모이면 어떤 활동을 해 보고 싶나요?",
-      "observe": "사진에서 버스 그림이 있는 큰 안내판을 찾아보세요. 모인 사람들은 어디를 보고 있나요?",
-      "pdfRole": "큰 안내판·마이크·모인 사람들을 관찰합니다. 역할 예: 만나서 이야기 듣기, 함께 배우기.",
+      "mapGroup": "osco",
+      "address": "충청북도 청주시 흥덕구 오송읍 오송생명로 250",
+      "short": "전시와 배움을 만나는 곳",
+      "desc": "청주오스코는 오송에 있는 큰 전시·행사 공간이에요. 여러 전시와 행사가 열려 새로운 물건이나 작품을 보고 배울 수 있어요.",
+      "people": "사람들은 전시를 보거나 설명을 듣고, 행사에 참여해요. 일하는 분들은 전시를 준비하고 찾아온 사람들을 안내해요.",
+      "question": "친구들과 어떤 전시나 체험 행사에 가 보고 싶나요?",
+      "observe": "사진에서 길게 이어지는 지붕과 유리창을 찾아보세요. 건물로 들어가는 문과 계단은 어디에 있나요?",
+      "pdfRole": "곡선 지붕·유리창·계단을 관찰합니다. 역할 예: 전시 보기, 새로운 것을 배우기, 행사 참여하기.",
+      "roleLabel": "전시를 보고 배워요",
       "quiz": {
-        "question": "오송선하마루에서는 무엇을 할 수 있을까요?",
+        "question": "청주오스코에서는 무엇을 할 수 있을까요?",
         "options": [
-          "선로에 들어가 기차를 만져요",
-          "호수에서 물고기를 잡아요",
-          "모여서 이야기하고 문화 활동을 해요"
+          "기차를 타고 먼 곳으로 떠나요",
+          "물놀이 미끄럼틀을 타요",
+          "전시를 보고 새로운 것을 배워요"
         ],
         "answer": 2,
-        "explanation": "오송선하마루는 사람들이 모여 이야기하고 전시·회의·문화 활동을 하는 공간이에요.",
-        "hint": "사진 속 사람들은 함께 모여 이야기를 듣고 있어요."
+        "explanation": "청주오스코는 사람들이 전시와 여러 행사에 참여하며 새로운 것을 보고 배우는 곳이에요.",
+        "hint": "장소 이야기에서 전시와 행사가 열리는 곳이라는 단서를 찾아보세요."
       },
       "coordinateSource": {
-        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
-        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+        "url": "https://commons.wikimedia.org/wiki/File:20250607_청주_오스코_내부.jpg",
+        "note": "청주오스코 실제 내부 사진의 촬영 위치 GPS를 건물 대표점으로 사용. 공식 교통 안내의 만수리 275-5, 오송생명로 250 주소와 대조했으며 특정 출입구를 뜻하지 않습니다."
       },
       "sources": [
         {
-          "url": "https://www.eshare.go.kr/UserPortal/cms/article/view.do?bbatclSeq=2557&bbsNo=23",
-          "note": "2025-07-01 개관, 철로 아래 문화공간의 위치와 용도."
+          "url": "https://osco.or.kr/traffic/traffic_guidance/",
+          "note": "청주오스코 공식 주소와 위치 안내."
         },
         {
-          "url": "https://www.newsis.com/view/NISX20251105_0003391218",
-          "note": "2025-11-05 자율주행 DRT 행사 장소가 오송역 선하마루임을 교차 확인."
+          "url": "https://osco.or.kr/",
+          "note": "청주오스코 공식 전시장·회의실·전시 행사 안내."
+        },
+        {
+          "url": "https://www.cheongju.go.kr/www/selectBbsNttView.do?bbsNo=40&key=279&nttNo=242828",
+          "note": "청주시 건축상 대상 청주오스코 실제 외관·내부 사진, 공공누리 제2유형."
         }
       ],
       "photo": {
-        "src": "assets/photos/osong-sunhamaru-2025.jpg",
-        "alt": "오송선하마루 행사장에서 버스 그림이 있는 안내판과 마이크 앞 발표자를 바라보는 사람들",
-        "caption": "오송선하마루에서 열린 행사 · 2025.11.05 행사일",
-        "title": "오송 자율주행 DRT운행개시 행사 사진 2",
+        "src": "assets/photos/osong-osco-exterior-2025.jpg",
+        "alt": "청주오스코의 길게 굽은 지붕과 유리 외벽, GATE A 출입문 앞 계단",
+        "caption": "청주오스코 외관 · 2025.09.24 게시(촬영일 미공개)",
+        "title": "청주오스코 외관",
         "author": "청주시청",
-        "date": "2025-11-05",
-        "dateKind": "event",
-        "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
-        "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
-        "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682866.do",
-        "photoId": "682866",
+        "date": "2025-09-24",
+        "dateKind": "publication",
+        "dateEvidence": "청주시 건축상 보도자료 게시일이며 사진 촬영일은 공개되지 않았습니다.",
+        "sourceUrl": "https://www.cheongju.go.kr/www/selectBbsNttView.do?bbsNo=40&key=279&nttNo=242828",
+        "downloadUrl": "https://www.cheongju.go.kr/DATA/bbs/40/20250924062819029_mFgP.jpg",
         "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
         "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
         "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
         "preserveOriginal": true,
-        "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 2 · 2025-11-05 행사 · 공공누리 제2유형",
-        "width": 1192,
-        "height": 795
+        "attribution": "사진: 청주시청 · 청주오스코 외관 · 2025.09.24 게시 · 공공누리 제2유형",
+        "width": 1164,
+        "height": 514,
+        "sha256": "B6DC880507C25042269EC5ECF523D9C7DDC9A649B9836440656D69777D2B629B"
       },
-      "roleLabel": "모여서 문화 활동을 해요",
       "extraPhotos": [
         {
-          "src": "assets/photos/osong-sunhamaru-outside-2025.jpg",
-          "alt": "오송선하마루 행사장 밖 지붕 아래 버스의 열린 문과 탑승하는 사람들",
-          "caption": "선하마루 행사장 밖 버스 시승 모습 · 2025.11.05 행사일",
-          "title": "오송 자율주행 DRT운행개시 행사 사진 19",
+          "src": "assets/photos/osong-osco-interior-2025.jpg",
+          "alt": "큰 유리창 옆에 의자와 탁자가 놓인 청주오스코 실내 공간",
+          "caption": "청주오스코 실내 · 2025.09.24 게시(촬영일 미공개)",
+          "title": "청주오스코 실내",
           "author": "청주시청",
-          "date": "2025-11-05",
-          "dateKind": "event",
-          "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
-          "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
-          "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682884.do",
-          "photoId": "682884",
+          "date": "2025-09-24",
+          "dateKind": "publication",
+          "dateEvidence": "청주시 건축상 보도자료 게시일이며 사진 촬영일은 공개되지 않았습니다.",
+          "sourceUrl": "https://www.cheongju.go.kr/www/selectBbsNttView.do?bbsNo=40&key=279&nttNo=242828",
+          "downloadUrl": "https://www.cheongju.go.kr/DATA/bbs/40/20250924062819035_UjMF.jpg",
           "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
           "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
           "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
           "preserveOriginal": true,
-          "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 19 · 2025-11-05 행사 · 공공누리 제2유형",
-          "width": 1192,
-          "height": 795
+          "attribution": "사진: 청주시청 · 청주오스코 실내 · 2025.09.24 게시 · 공공누리 제2유형",
+          "width": 1068,
+          "height": 708,
+          "sha256": "5F25FC5939AF92925064121212234F59419C01916D5EADB55D886A4EC79FCE06"
         }
       ]
     },
@@ -218,7 +221,7 @@
       "id": "health",
       "number": "04",
       "name": "오송생명과학단지 보건지소",
-      "shortName": "오송 보건지소",
+      "shortName": "생명과학단지 보건지소",
       "emoji": "💚",
       "coords": [
         36.6317593,

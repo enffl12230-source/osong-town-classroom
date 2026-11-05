@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const { places } = JSON.parse(fs.readFileSync(path.join(root, 'data/places.json'), 'utf8'));
-assert.deepEqual(places.map(p => p.id), ['station', 'sunhamaru', 'park', 'health', 'center']);
+assert.deepEqual(places.map(p => p.id), ['station', 'osco', 'park', 'health', 'center']);
 const ids = [...html.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
 assert.equal(ids.length, new Set(ids).size, 'Unique HTML IDs');
 for (const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
@@ -26,7 +26,7 @@ for (const place of places) {
     assert.ok(Number(photo.date.slice(0, 4)) >= 2024, 'Recent source date');
   }
 }
-assert.deepEqual(places[0].coords, places[1].coords, 'Station and Sunhamaru share a verified location group');
+assert.equal(new Set(places.map(p => p.coords.join(','))).size, 5, 'Five distinct mapped places');
 const sourceData = JSON.parse(fs.readFileSync(path.join(root, 'assets/photo-sources.json'), 'utf8'));
 assert.ok(sourceData.photos.length >= 5);
 for (const name of ['student-worksheet', 'exploration-guide', 'teacher-guide', 'full-set']) {
@@ -35,5 +35,5 @@ for (const name of ['student-worksheet', 'exploration-guide', 'teacher-guide', '
 }
 for (const code of ['2슬02-01', '2슬02-04', '2바02-01']) assert.ok(html.includes(code));
 assert.match(html, /40분/);
-assert.ok(!/오송도서관|오송종합사회복지관|오송호수공원|src="places\.js"/.test(html), 'No obsolete place content or duplicate data script');
+assert.ok(!/오송도서관|오송종합사회복지관|오송호수공원|선하마루|src="places\.js"/.test(html), 'No obsolete place content or duplicate data script');
 console.log('Static checks passed: five places, recent actual photographs, attribution, local links, PDFs and curriculum.');
