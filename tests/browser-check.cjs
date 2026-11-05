@@ -51,6 +51,9 @@ async function main() {
         check(Math.hypot(one.x - two.x, one.y - two.y) >= 46, `${label}: map places ${a + 1}/${b + 1} are separately selectable`);
       }
       await noOverflow(page, label);
+      const healthArt = await page.locator('.hero-art .health').boundingBox();
+      const stationArt = await page.locator('.hero-art .station').boundingBox();
+      check(healthArt.x + healthArt.width <= stationArt.x, `${label}: illustrated buildings do not overlap`);
       await page.screenshot({ path: `test-results/${label}-hero.png` });
       for (const card of await page.locator('#places .place-card').all()) await card.scrollIntoViewIfNeeded();
       await page.waitForFunction(() => [...document.querySelectorAll('#places img')].every(img => img.complete && img.naturalWidth > 0));
@@ -152,6 +155,7 @@ async function main() {
       assert.equal((await response.body()).subarray(0, 5).toString(), '%PDF-');
     }
     await page.screenshot({ path: 'test-results/map-fallback.png', fullPage: true });
+    await page.locator('#simple-map-fallback figure').screenshot({ path: 'test-results/diagram.png' });
     await context.close();
     const failureContext = await browser.newContext();
     const failurePage = await failureContext.newPage();
