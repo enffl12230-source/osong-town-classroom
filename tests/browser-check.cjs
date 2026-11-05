@@ -95,6 +95,7 @@ async function main() {
         assert.match(await page.locator('#progress-text').innerText(), new RegExp(`${i + 1}\\s*/\\s*5`));
         check(await page.locator('#visit-place').isDisabled(), `${label}: duplicate stamp disabled`);
         await page.locator('#close-dialog').click();
+        await page.waitForFunction(id => document.activeElement?.matches(`#places [data-place-id="${id}"]`), place.id, { timeout: 3000 });
         check(await page.locator(`#places [data-place-id="${place.id}"]`).evaluate(el => el === document.activeElement), `${label}: focus restored after card rerender`);
       }
       assert.match(await page.locator('#progress-message').innerText(), /탐험 성공/);
