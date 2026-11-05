@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-05",
+  "canonicalData": "../data/places.json",
+  "usage": "무료 초등학교 교육용 웹페이지 및 활동지. 모든 사진의 상업적 이용은 금지됩니다. 오송역 사진은 변경도 금지됩니다.",
+  "photoNotice": "사진은 2024~2026년 공개 자료입니다. 게시일과 행사일을 구분해 표시했으며, 지금의 모습과 다를 수 있어요.",
+  "photos": [
+    {
+      "placeId": "station",
+      "place": "오송역",
+      "file": "photos/osong-station-2024.jpg",
+      "src": "assets/photos/osong-station-2024.jpg",
+      "alt": "KTX 기차와 여러 줄의 선로 옆에서 물줄기를 뿜는 오송역 자동살수장치",
+      "caption": "오송역 선로와 자동살수장치 · 2024.09.13 게시(촬영일 미공개)",
+      "title": "오송역 자동살수장치.jpg",
+      "author": "한국철도공사(코레일)",
+      "date": "2024-09-13",
+      "dateKind": "publication",
+      "dateEvidence": "한국철도공사 보도자료 작성일이며 사진 촬영일은 공개되지 않았습니다.",
+      "sourceUrl": "https://info.korail.com/info/selectBbsNttView.do?bbsNo=199&key=911&nttNo=22686",
+      "downloadUrl": "https://info.korail.com/info/downloadBbsFile.do?atchmnflNo=22191",
+      "license": "공공누리 제4유형 (출처표시·상업적 이용금지·변경금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType4.do",
+      "changes": "없음. 원본 JPEG 바이트를 보존하고 자르기·보정·재인코딩 없이 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 한국철도공사(코레일) · 오송역 자동살수장치 · 2024.09.13 게시 · 공공누리 제4유형",
+      "width": 1200,
+      "height": 781,
+      "sha256": "7416B08EBF82A1C59398F9D78AECF19FE8419457F3F3EA7FBC863CDA2397BE96",
+      "coordinates": {
+        "lat": 36.62079167,
+        "lon": 127.3278
+      },
+      "coordinateSource": {
+        "url": "https://commons.wikimedia.org/wiki/Category:Osong_Station",
+        "note": "Wikimedia Commons 좌표API로 확인한 역 대표점. 사진의 촬영 지점이나 승강장 위치를 뜻하지 않습니다."
+      }
+    },
+    {
+      "placeId": "sunhamaru",
+      "place": "오송선하마루",
+      "file": "photos/osong-sunhamaru-2025.jpg",
+      "src": "assets/photos/osong-sunhamaru-2025.jpg",
+      "alt": "오송선하마루 행사장에서 버스 그림이 있는 안내판과 마이크 앞 발표자를 바라보는 사람들",
+      "caption": "오송선하마루에서 열린 행사 · 2025.11.05 행사일",
+      "title": "오송 자율주행 DRT운행개시 행사 사진 2",
+      "author": "청주시청",
+      "date": "2025-11-05",
+      "dateKind": "event",
+      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
+      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682866.do",
+      "photoId": "682866",
+      "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+      "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 2 · 2025-11-05 행사 · 공공누리 제2유형",
+      "width": 1192,
+      "height": 795,
+      "coordinates": {
+        "lat": 36.62079167,
+        "lon": 127.3278
+      },
+      "coordinateSource": {
+        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
+        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+      }
+    },
+    {
+      "placeId": "sunhamaru",
+      "place": "오송선하마루",
+      "file": "photos/osong-sunhamaru-outside-2025.jpg",
+      "src": "assets/photos/osong-sunhamaru-outside-2025.jpg",
+      "alt": "오송선하마루 행사장 밖 지붕 아래 버스의 열린 문과 탑승하는 사람들",
+      "caption": "선하마루 행사장 밖 버스 시승 모습 · 2025.11.05 행사일",
+      "title": "오송 자율주행 DRT운행개시 행사 사진 19",
+      "author": "청주시청",
+      "date": "2025-11-05",
+      "dateKind": "event",
+      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
+      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682884.do",
+      "photoId": "682884",
+      "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+      "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 19 · 2025-11-05 행사 · 공공누리 제2유형",
+      "width": 1192,
+      "height": 795,
+      "coordinates": {
+        "lat": 36.62079167,
+        "lon": 127.3278
+      },
+      "coordinateSource": {
+        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
+        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+      }
+    },
+    {
+      "placeId": "park",
+      "place": "정중근린공원 물놀이장",
+      "file": "photos/osong-jeongjung-park-2025.jpg",
+      "src": "assets/photos/osong-jeongjung-park-2025.jpg",
+      "alt": "정중근린공원 물놀이장의 파랑·노랑 미끄럼틀과 물줄기, 놀이 중인 어린이들",
+      "caption": "정중근린공원 물놀이장 · 2025.06.27 개장 행사일",
+      "title": "정중근린공원 물놀이장 준공및 개장식 사진 23",
+      "author": "청주시청",
+      "date": "2025-06-27",
+      "dateKind": "event",
+      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=84&ctgryNo=605&photoInfoNo=72309",
+      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/673965.do",
+      "photoId": "673965",
+      "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+      "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 청주시청 · 정중근린공원 물놀이장 준공및 개장식 사진 23 · 2025-06-27 행사 · 공공누리 제2유형",
+      "width": 1192,
+      "height": 795,
+      "coordinates": {
+        "lat": 36.6178341588767,
+        "lon": 127.308519938984
+      },
+      "coordinateSource": {
+        "url": "https://ticket.cheongju.go.kr/www/selectExprnWebView.do?exprnNo=528&key=8",
+        "note": "청주시 통합예약의 data-lat/data-lon 및 카카오 지도 길찾기 링크와 동일한 공식 시설 대표 좌표."
+      }
+    },
+    {
+      "placeId": "health",
+      "place": "오송생명과학단지 보건지소",
+      "file": "photos/osong-health-2025.jpg",
+      "src": "assets/photos/osong-health-2025.jpg",
+      "alt": "오송생명과학단지 보건지소 입구 앞에서 개소식 리본을 든 사람들과 2025년 3월 19일 안내 현수막",
+      "caption": "오송생명과학단지 보건지소 · 2025.03.19 개소식",
+      "title": "오송생명과학단지 건강증진형 보건지소 개소식 사진 10",
+      "author": "청주시청",
+      "date": "2025-03-19",
+      "dateKind": "event",
+      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=113&ctgryNo=615&photoInfoNo=72150",
+      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/670527.do",
+      "photoId": "670527",
+      "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+      "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 청주시청 · 오송생명과학단지 건강증진형 보건지소 개소식 사진 10 · 2025-03-19 행사 · 공공누리 제2유형",
+      "width": 1192,
+      "height": 795,
+      "coordinates": {
+        "lat": 36.6317593,
+        "lon": 127.326579
+      },
+      "coordinateSource": {
+        "url": "https://woori-chunsa.com/hospitals/JDQ4MTYyMiM1MSMkMSMkOCMkOTIkMzgxOTYxIzExIyQxIyQ3IyQ3OSQyNjE0ODEjNTEjJDEjJDYjJDgz",
+        "note": "의료기관 공개데이터를 재게시한 자료의 건물 대표 위치. 사진 속 주소판 67 및 오송생명3로 67 주소와 대조."
+      }
+    },
+    {
+      "placeId": "center",
+      "place": "오송읍 행정복지센터",
+      "file": "photos/osong-center-2026.jpg",
+      "src": "assets/photos/osong-center-2026.jpg",
+      "alt": "오송읍 행정복지센터 회의실에서 테이블을 둘러싸고 주민 이야기를 나누는 사람들과 행사 전광판",
+      "caption": "오송읍 행정복지센터 주민과의 대화 · 2026.08.03 행사일",
+      "title": "오송읍 주민과의 대화(민선9기 초도순방) 사진 11",
+      "author": "청주시청",
+      "date": "2026-08-03",
+      "dateKind": "event",
+      "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+      "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=84&ctgryNo=605&photoInfoNo=72739",
+      "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/689062.do",
+      "photoId": "689062",
+      "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+      "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+      "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+      "preserveOriginal": true,
+      "attribution": "사진: 청주시청 · 오송읍 주민과의 대화(민선9기 초도순방) 사진 11 · 2026-08-03 행사 · 공공누리 제2유형",
+      "width": 1192,
+      "height": 795,
+      "coordinates": {
+        "lat": 36.6091807,
+        "lon": 127.3245567
+      },
+      "coordinateSource": {
+        "url": "https://www.cheongju.go.kr/osong/contents.do?key=2194",
+        "note": "기존 지도 자료의 시설 대표 좌표를 유지하고 청주시 오송읍 공식 오시는 길의 가로수로 174 주소와 대조. 회의실이나 촬영 지점의 별도 좌표는 아닙니다."
+      }
+    }
+  ],
+  "photoDbLicenseEvidence": {
+    "exactPageLabel": "제2유형 : 출처표시 + 상업적 이용금지 - 공공누리 공공저작물 자유이용허락",
+    "noticeUrl": "https://photo.cheongju.go.kr/photo/selectBbsNttView.do?bbsNo=1&key=412&nttNo=39"
+  }
+}

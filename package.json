@@ -1,0 +1,11 @@
+{
+  "name": "osong-town-classroom",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/static-check.cjs",
+    "test:browser": "node tests/browser-check.cjs",
+    "build": "node tests/build-site.cjs"
+  },
+  "devDependencies": { "playwright": "1.56.1" }
+}

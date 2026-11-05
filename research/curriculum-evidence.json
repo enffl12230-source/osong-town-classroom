@@ -1,0 +1,191 @@
+{
+  "verifiedVia": "curriculum-kr MCP / get_standard",
+  "verifiedDate": "2026-11-05",
+  "note": "The MCP data returns officialText despite legacy officialTextIncluded/sourceTextIncluded flags being false. Lesson quotes below use the explicit officialText field. Micro-topics are dataset-derived teaching suggestions, not additional Ministry achievement standards.",
+  "standards": [
+    {
+      "key": "kr-2022-elem-integrated:[2슬02-01]",
+      "code": "[2슬02-01]",
+      "gradeBand": "1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Wise Life",
+      "domainKorean": "슬기로운 생활",
+      "curriculumArea": "Where We Live",
+      "curriculumAreaKorean": "우리는 어디서 살아갈까",
+      "curriculumAreaKind": "integrated-life-question",
+      "summary": "마을과 사람들이 생활하는 모습 살펴보기",
+      "officialTextIncluded": false,
+      "sourceRefs": [
+        "kr-moe-2022-33-annex15-pdf",
+        "kr-ncic-2022-elem-integrated-attachment"
+      ],
+      "sourceSection": "공통 교육과정 > 바른 생활·슬기로운 생활·즐거운 생활 > 초등학교 1~2학년 > 우리는 어디서 살아갈까",
+      "verificationStatus": "official-source-checked",
+      "sourceBasis": "Achievement-standard code inventory checked against NCIC-hosted Ministry of Education 2022-33 Annex 15 PDF; this artifact stores concise source-derived paraphrases rather than official standard text.",
+      "evidence": [
+        "NCIC inventory tuple checked: degreeCode=1014, classCode=1002, subjectCode=3363, openYear=2022, openMonth=12.",
+        "Official attachment checked: [별책15] 바른 생활, 슬기로운 생활, 즐거운 생활 교육과정.pdf, orgAttNo=10003571.",
+        "Code [2슬02-01] appears in the 슬기로운 생활 achievement-standard section for 초등학교 1~2학년."
+      ],
+      "lifeQuestion": "Where We Live",
+      "lifeQuestionKorean": "우리는 어디서 살아갈까",
+      "sourceTextIncluded": false,
+      "workstreamFile": "integrated.json",
+      "curriculumId": "kr-2022-elem-integrated",
+      "officialText": "우리가 살고 있는 마을과 사람들이 생활하는 모습을 살펴본다.",
+      "linkedTopics": [
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0201.01",
+          "titleKorean": "마을과 사람들이 생활하는 모습 살펴보기 - 탐구 질문 만들기"
+        },
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0201.02",
+          "titleKorean": "마을과 사람들이 생활하는 모습 살펴보기 - 관찰과 자료 읽기"
+        },
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0201.03",
+          "titleKorean": "마을과 사람들이 생활하는 모습 살펴보기 - 탐구 결과 설명"
+        }
+      ]
+    },
+    {
+      "key": "kr-2022-elem-integrated:[2슬02-04]",
+      "code": "[2슬02-04]",
+      "gradeBand": "1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Wise Life",
+      "domainKorean": "슬기로운 생활",
+      "curriculumArea": "Where We Live",
+      "curriculumAreaKorean": "우리는 어디서 살아갈까",
+      "curriculumAreaKind": "integrated-life-question",
+      "summary": "궁금한 세계를 여러 매체로 탐색하기",
+      "officialTextIncluded": false,
+      "sourceRefs": [
+        "kr-moe-2022-33-annex15-pdf",
+        "kr-ncic-2022-elem-integrated-attachment"
+      ],
+      "sourceSection": "공통 교육과정 > 바른 생활·슬기로운 생활·즐거운 생활 > 초등학교 1~2학년 > 우리는 어디서 살아갈까",
+      "verificationStatus": "official-source-checked",
+      "sourceBasis": "Achievement-standard code inventory checked against NCIC-hosted Ministry of Education 2022-33 Annex 15 PDF; this artifact stores concise source-derived paraphrases rather than official standard text.",
+      "evidence": [
+        "NCIC inventory tuple checked: degreeCode=1014, classCode=1002, subjectCode=3363, openYear=2022, openMonth=12.",
+        "Official attachment checked: [별책15] 바른 생활, 슬기로운 생활, 즐거운 생활 교육과정.pdf, orgAttNo=10003571.",
+        "Code [2슬02-04] appears in the 슬기로운 생활 achievement-standard section for 초등학교 1~2학년."
+      ],
+      "lifeQuestion": "Where We Live",
+      "lifeQuestionKorean": "우리는 어디서 살아갈까",
+      "sourceTextIncluded": false,
+      "workstreamFile": "integrated.json",
+      "curriculumId": "kr-2022-elem-integrated",
+      "officialText": "궁금한 세계를 다양한 매체로 탐색한다.",
+      "linkedTopics": [
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0204.01",
+          "titleKorean": "궁금한 세계를 여러 매체로 탐색하기 - 탐구 질문 만들기"
+        },
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0204.02",
+          "titleKorean": "궁금한 세계를 여러 매체로 탐색하기 - 관찰과 자료 읽기"
+        },
+        {
+          "id": "kr.mt.integrated.wise-life.where.2seul0204.03",
+          "titleKorean": "궁금한 세계를 여러 매체로 탐색하기 - 탐구 결과 설명"
+        }
+      ]
+    },
+    {
+      "key": "kr-2022-elem-integrated:[2바02-01]",
+      "code": "[2바02-01]",
+      "gradeBand": "1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Right Life",
+      "domainKorean": "바른 생활",
+      "curriculumArea": "Where We Live",
+      "curriculumAreaKorean": "우리는 어디서 살아갈까",
+      "curriculumAreaKind": "integrated-life-question",
+      "summary": "공동체 안에서 할 수 있는 일 찾기와 실천",
+      "officialTextIncluded": false,
+      "sourceRefs": [
+        "kr-moe-2022-33-annex15-pdf",
+        "kr-ncic-2022-elem-integrated-attachment"
+      ],
+      "sourceSection": "공통 교육과정 > 바른 생활·슬기로운 생활·즐거운 생활 > 초등학교 1~2학년 > 우리는 어디서 살아갈까",
+      "verificationStatus": "official-source-checked",
+      "sourceBasis": "Achievement-standard code inventory checked against NCIC-hosted Ministry of Education 2022-33 Annex 15 PDF; this artifact stores concise source-derived paraphrases rather than official standard text.",
+      "evidence": [
+        "NCIC inventory tuple checked: degreeCode=1014, classCode=1002, subjectCode=3363, openYear=2022, openMonth=12.",
+        "Official attachment checked: [별책15] 바른 생활, 슬기로운 생활, 즐거운 생활 교육과정.pdf, orgAttNo=10003571.",
+        "Code [2바02-01] appears in the 바른 생활 achievement-standard section for 초등학교 1~2학년."
+      ],
+      "lifeQuestion": "Where We Live",
+      "lifeQuestionKorean": "우리는 어디서 살아갈까",
+      "sourceTextIncluded": false,
+      "workstreamFile": "integrated.json",
+      "curriculumId": "kr-2022-elem-integrated",
+      "officialText": "공동체에서 내가 할 수 있는 일을 찾아보고 실천한다.",
+      "linkedTopics": [
+        {
+          "id": "kr.mt.integrated.right-life.where.2ba0201.01",
+          "titleKorean": "공동체 안에서 할 수 있는 일 찾기와 실천 - 생활 맥락 이해"
+        },
+        {
+          "id": "kr.mt.integrated.right-life.where.2ba0201.02",
+          "titleKorean": "공동체 안에서 할 수 있는 일 찾기와 실천 - 바른 생활 실천"
+        },
+        {
+          "id": "kr.mt.integrated.right-life.where.2ba0201.03",
+          "titleKorean": "공동체 안에서 할 수 있는 일 찾기와 실천 - 성찰과 습관화"
+        }
+      ]
+    },
+    {
+      "key": "kr-2022-elem-integrated:[2즐02-01]",
+      "code": "[2즐02-01]",
+      "gradeBand": "1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Joyful Life",
+      "domainKorean": "즐거운 생활",
+      "curriculumArea": "Where We Live",
+      "curriculumAreaKorean": "우리는 어디서 살아갈까",
+      "curriculumAreaKind": "integrated-life-question",
+      "summary": "참여할 수 있는 문화 예술 향유",
+      "officialTextIncluded": false,
+      "sourceRefs": [
+        "kr-moe-2022-33-annex15-pdf",
+        "kr-ncic-2022-elem-integrated-attachment"
+      ],
+      "sourceSection": "공통 교육과정 > 바른 생활·슬기로운 생활·즐거운 생활 > 초등학교 1~2학년 > 우리는 어디서 살아갈까",
+      "verificationStatus": "official-source-checked",
+      "sourceBasis": "Achievement-standard code inventory checked against NCIC-hosted Ministry of Education 2022-33 Annex 15 PDF; this artifact stores concise source-derived paraphrases rather than official standard text.",
+      "evidence": [
+        "NCIC inventory tuple checked: degreeCode=1014, classCode=1002, subjectCode=3363, openYear=2022, openMonth=12.",
+        "Official attachment checked: [별책15] 바른 생활, 슬기로운 생활, 즐거운 생활 교육과정.pdf, orgAttNo=10003571.",
+        "Code [2즐02-01] appears in the 즐거운 생활 achievement-standard section for 초등학교 1~2학년."
+      ],
+      "lifeQuestion": "Where We Live",
+      "lifeQuestionKorean": "우리는 어디서 살아갈까",
+      "sourceTextIncluded": false,
+      "workstreamFile": "integrated.json",
+      "curriculumId": "kr-2022-elem-integrated",
+      "officialText": "내가 참여할 수 있는 문화 예술을 향유한다.",
+      "linkedTopics": [
+        {
+          "id": "kr.mt.integrated.joyful-life.where.2jeul0201.01",
+          "titleKorean": "참여할 수 있는 문화 예술 향유 - 감각과 상상 열기"
+        },
+        {
+          "id": "kr.mt.integrated.joyful-life.where.2jeul0201.02",
+          "titleKorean": "참여할 수 있는 문화 예술 향유 - 놀이와 표현하기"
+        },
+        {
+          "id": "kr.mt.integrated.joyful-life.where.2jeul0201.03",
+          "titleKorean": "참여할 수 있는 문화 예술 향유 - 감상과 나눔"
+        }
+      ]
+    }
+  ]
+}

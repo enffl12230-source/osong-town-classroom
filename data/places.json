@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-05",
+  "photoNotice": "사진은 2024~2026년 공개 자료입니다. 게시일과 행사일을 구분해 표시했으며, 지금의 모습과 다를 수 있어요.",
+  "mapNotice": "지도는 장소의 대표 위치를 보여 줘요. 오송역과 선하마루는 같은 위치 그룹이며 선하마루는 역 2층 3번 출구 방면이에요.",
+  "places": [
+    {
+      "id": "station",
+      "number": "01",
+      "name": "오송역",
+      "shortName": "오송역",
+      "emoji": "🚉",
+      "coords": [
+        36.62079167,
+        127.3278
+      ],
+      "mapGroup": "station",
+      "address": "충청북도 청주시 흥덕구 오송읍 오송가락로 123",
+      "short": "기차로 이어지는 곳",
+      "desc": "오송역은 기차를 타고 내리는 곳이에요. 사람들은 기차로 다른 마을에 가거나 오송을 찾아와요.",
+      "people": "역에서 일하는 분들은 사람들이 안전하게 기차를 타도록 도와요. 사진에는 선로에 물을 뿌리는 장치가 보여요.",
+      "question": "기차를 타고 누구를 만나러 가 보고 싶나요?",
+      "observe": "사진에서 기차, 길게 이어진 선로, 물줄기를 찾아보세요. 물은 어디로 뿌려지고 있나요?",
+      "pdfRole": "기차·선로·물줄기를 관찰합니다. 역할 예: 기차 타기, 승객 안내하기. 선로에는 들어가지 않아요.",
+      "quiz": {
+        "question": "오송역은 어떤 곳일까요?",
+        "options": [
+          "기차를 타고 다른 곳으로 가는 곳",
+          "물놀이를 하는 곳",
+          "건강을 돌보는 곳"
+        ],
+        "answer": 0,
+        "explanation": "오송역은 사람들이 기차를 타고 내리며 다른 지역으로 이동하는 곳이에요.",
+        "hint": "사진의 긴 기차를 살펴보세요."
+      },
+      "coordinateSource": {
+        "url": "https://commons.wikimedia.org/wiki/Category:Osong_Station",
+        "note": "Wikimedia Commons 좌표API로 확인한 역 대표점. 사진의 촬영 지점이나 승강장 위치를 뜻하지 않습니다."
+      },
+      "sources": [
+        {
+          "url": "https://info.korail.com/info/selectBbsNttView.do?bbsNo=199&key=911&nttNo=22686",
+          "note": "첨부파일명 '오송역 자동살수장치.jpg'로 촬영 장소 확인. 게시일 2024-09-13."
+        }
+      ],
+      "photo": {
+        "src": "assets/photos/osong-station-2024.jpg",
+        "alt": "KTX 기차와 여러 줄의 선로 옆에서 물줄기를 뿜는 오송역 자동살수장치",
+        "caption": "오송역 선로와 자동살수장치 · 2024.09.13 게시(촬영일 미공개)",
+        "title": "오송역 자동살수장치.jpg",
+        "author": "한국철도공사(코레일)",
+        "date": "2024-09-13",
+        "dateKind": "publication",
+        "dateEvidence": "한국철도공사 보도자료 작성일이며 사진 촬영일은 공개되지 않았습니다.",
+        "sourceUrl": "https://info.korail.com/info/selectBbsNttView.do?bbsNo=199&key=911&nttNo=22686",
+        "downloadUrl": "https://info.korail.com/info/downloadBbsFile.do?atchmnflNo=22191",
+        "license": "공공누리 제4유형 (출처표시·상업적 이용금지·변경금지)",
+        "licenseUrl": "https://www.kogl.or.kr/info/licenseType4.do",
+        "changes": "없음. 원본 JPEG 바이트를 보존하고 자르기·보정·재인코딩 없이 원래 비율로 표시합니다.",
+        "preserveOriginal": true,
+        "attribution": "사진: 한국철도공사(코레일) · 오송역 자동살수장치 · 2024.09.13 게시 · 공공누리 제4유형",
+        "width": 1200,
+        "height": 781,
+        "sha256": "7416B08EBF82A1C59398F9D78AECF19FE8419457F3F3EA7FBC863CDA2397BE96"
+      },
+      "roleLabel": "다른 지역으로 이동해요"
+    },
+    {
+      "id": "sunhamaru",
+      "number": "02",
+      "name": "오송선하마루",
+      "shortName": "선하마루",
+      "emoji": "🎨",
+      "coords": [
+        36.62079167,
+        127.3278
+      ],
+      "mapGroup": "station",
+      "mapNote": "오송역 2층 3번 출구·B주차장 방면이에요. 역과 같은 대표 위치로 표시했어요.",
+      "address": "충청북도 청주시 흥덕구 오송읍 오송가락로 132, 오송역 2층 3번 출구 방면",
+      "short": "만나고 배우는 곳",
+      "desc": "오송선하마루는 오송역 철길 아래 공간에 만든 문화 공간이에요. 사람들이 만나 이야기를 나누고, 전시와 여러 활동을 함께해요.",
+      "people": "사람들이 모여 이야기를 듣거나 회의하고 쉬어요. 사진은 이곳에서 열린 버스 운행 시작 행사예요.",
+      "question": "친구들과 이런 공간에 모이면 어떤 활동을 해 보고 싶나요?",
+      "observe": "사진에서 버스 그림이 있는 큰 안내판을 찾아보세요. 모인 사람들은 어디를 보고 있나요?",
+      "pdfRole": "큰 안내판·마이크·모인 사람들을 관찰합니다. 역할 예: 만나서 이야기 듣기, 함께 배우기.",
+      "quiz": {
+        "question": "오송선하마루에서는 무엇을 할 수 있을까요?",
+        "options": [
+          "선로에 들어가 기차를 만져요",
+          "호수에서 물고기를 잡아요",
+          "모여서 이야기하고 문화 활동을 해요"
+        ],
+        "answer": 2,
+        "explanation": "오송선하마루는 사람들이 모여 이야기하고 전시·회의·문화 활동을 하는 공간이에요.",
+        "hint": "사진 속 사람들은 함께 모여 이야기를 듣고 있어요."
+      },
+      "coordinateSource": {
+        "url": "https://www.eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=GF26O5157868",
+        "note": "공식주소는 오송역 2층 3번 출구·B주차장 방면. 시설의 독립 좌표를 확인하지 못해 역 대표 좌표를 공유하며, 별도 위치를 임의 생성하지 않았습니다."
+      },
+      "sources": [
+        {
+          "url": "https://www.eshare.go.kr/UserPortal/cms/article/view.do?bbatclSeq=2557&bbsNo=23",
+          "note": "2025-07-01 개관, 철로 아래 문화공간의 위치와 용도."
+        },
+        {
+          "url": "https://www.newsis.com/view/NISX20251105_0003391218",
+          "note": "2025-11-05 자율주행 DRT 행사 장소가 오송역 선하마루임을 교차 확인."
+        }
+      ],
+      "photo": {
+        "src": "assets/photos/osong-sunhamaru-2025.jpg",
+        "alt": "오송선하마루 행사장에서 버스 그림이 있는 안내판과 마이크 앞 발표자를 바라보는 사람들",
+        "caption": "오송선하마루에서 열린 행사 · 2025.11.05 행사일",
+        "title": "오송 자율주행 DRT운행개시 행사 사진 2",
+        "author": "청주시청",
+        "date": "2025-11-05",
+        "dateKind": "event",
+        "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+        "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
+        "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682866.do",
+        "photoId": "682866",
+        "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+        "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+        "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+        "preserveOriginal": true,
+        "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 2 · 2025-11-05 행사 · 공공누리 제2유형",
+        "width": 1192,
+        "height": 795
+      },
+      "roleLabel": "모여서 문화 활동을 해요",
+      "extraPhotos": [
+        {
+          "src": "assets/photos/osong-sunhamaru-outside-2025.jpg",
+          "alt": "오송선하마루 행사장 밖 지붕 아래 버스의 열린 문과 탑승하는 사람들",
+          "caption": "선하마루 행사장 밖 버스 시승 모습 · 2025.11.05 행사일",
+          "title": "오송 자율주행 DRT운행개시 행사 사진 19",
+          "author": "청주시청",
+          "date": "2025-11-05",
+          "dateKind": "event",
+          "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+          "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=87&ctgryNo=607&photoInfoNo=72545",
+          "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/682884.do",
+          "photoId": "682884",
+          "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+          "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+          "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+          "preserveOriginal": true,
+          "attribution": "사진: 청주시청 · 오송 자율주행 DRT운행개시 행사 사진 19 · 2025-11-05 행사 · 공공누리 제2유형",
+          "width": 1192,
+          "height": 795
+        }
+      ]
+    },
+    {
+      "id": "park",
+      "number": "03",
+      "name": "정중근린공원 물놀이장",
+      "shortName": "정중근린공원",
+      "emoji": "💦",
+      "coords": [
+        36.6178341588767,
+        127.308519938984
+      ],
+      "mapGroup": "park",
+      "address": "충청북도 청주시 흥덕구 오송읍 봉산리 1517",
+      "short": "함께 놀고 쉬는 곳",
+      "desc": "정중근린공원에는 어린이들이 놀 수 있는 물놀이장이 있어요. 사진에서 미끄럼틀과 물이 뿜어져 나오는 놀이시설을 볼 수 있어요.",
+      "people": "어린이들은 함께 놀고, 어른들과 안전을 살피는 분들은 모두가 안전하게 이용하도록 도와요.",
+      "question": "여럿이 함께 즐겁게 놀려면 어떤 약속을 지키면 좋을까요?",
+      "observe": "미끄럼틀과 물줄기를 찾아보세요. 사진 속 놀이시설에는 어떤 색과 모양이 있나요?",
+      "pdfRole": "미끄럼틀·물줄기·놀이시설의 색을 관찰합니다. 역할 예: 함께 놀기. 약속 예: 차례 지키기.",
+      "quiz": {
+        "question": "정중근린공원 물놀이장을 함께 쓸 때 알맞은 행동은 무엇일까요?",
+        "options": [
+          "앞사람을 밀어요",
+          "차례를 지키며 안전하게 놀아요",
+          "바닥에 쓰레기를 버려요"
+        ],
+        "answer": 1,
+        "explanation": "함께 쓰는 놀이터에서는 차례를 지키고 서로를 배려해야 모두 즐겁게 놀 수 있어요.",
+        "hint": "나도 친구도 다치지 않고 즐겁게 노는 방법을 생각해 보세요."
+      },
+      "coordinateSource": {
+        "url": "https://ticket.cheongju.go.kr/www/selectExprnWebView.do?exprnNo=528&key=8",
+        "note": "청주시 통합예약의 data-lat/data-lon 및 카카오 지도 길찾기 링크와 동일한 공식 시설 대표 좌표."
+      },
+      "sources": [
+        {
+          "url": "https://www.cheongju.go.kr/www/contents.do?key=23828",
+          "note": "정중근린공원 주소와 어린이 물놀이장 운영 안내. 방문 가능 일시를 고정된 사실로 안내하지 않습니다."
+        }
+      ],
+      "photo": {
+        "src": "assets/photos/osong-jeongjung-park-2025.jpg",
+        "alt": "정중근린공원 물놀이장의 파랑·노랑 미끄럼틀과 물줄기, 놀이 중인 어린이들",
+        "caption": "정중근린공원 물놀이장 · 2025.06.27 개장 행사일",
+        "title": "정중근린공원 물놀이장 준공및 개장식 사진 23",
+        "author": "청주시청",
+        "date": "2025-06-27",
+        "dateKind": "event",
+        "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+        "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=84&ctgryNo=605&photoInfoNo=72309",
+        "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/673965.do",
+        "photoId": "673965",
+        "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+        "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+        "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+        "preserveOriginal": true,
+        "attribution": "사진: 청주시청 · 정중근린공원 물놀이장 준공및 개장식 사진 23 · 2025-06-27 행사 · 공공누리 제2유형",
+        "width": 1192,
+        "height": 795
+      },
+      "roleLabel": "함께 안전하게 놀아요"
+    },
+    {
+      "id": "health",
+      "number": "04",
+      "name": "오송생명과학단지 보건지소",
+      "shortName": "오송 보건지소",
+      "emoji": "💚",
+      "coords": [
+        36.6317593,
+        127.326579
+      ],
+      "mapGroup": "health",
+      "address": "충청북도 청주시 흥덕구 오송읍 오송생명3로 67",
+      "short": "이웃의 건강을 돕는 곳",
+      "desc": "오송생명과학단지 보건지소는 마을 사람들의 건강을 돕는 곳이에요. 2025년에 건강을 돌보는 활동을 더하는 건강증진형 보건지소로 새롭게 문을 열었어요.",
+      "people": "일하는 분들은 주민의 건강을 살피고 건강한 생활을 안내해요. 주민들은 건강을 위한 여러 활동에 참여해요.",
+      "question": "우리 마을에 건강을 도와주는 곳이 있으면 어떤 점이 좋을까요?",
+      "observe": "사진에서 건물로 들어가는 문과 길게 걸린 안내글을 찾아보세요. 문 앞에 사람들이 무엇을 들고 있나요?",
+      "pdfRole": "출입문·안내글·개소식 리본을 관찰합니다. 역할 예: 이웃의 건강 돕기, 건강한 생활 안내하기.",
+      "quiz": {
+        "question": "보건지소는 마을의 어떤 일을 도울까요?",
+        "options": [
+          "이웃의 건강을 도와요",
+          "기차가 갈 곳을 정해요",
+          "물놀이 미끄럼틀을 타요"
+        ],
+        "answer": 0,
+        "explanation": "보건지소는 주민들의 건강을 살피고 건강한 생활을 돕는 곳이에요.",
+        "hint": "장소 이름에 '보건'이 들어 있어요. 건강을 생각해 보세요."
+      },
+      "coordinateSource": {
+        "url": "https://woori-chunsa.com/hospitals/JDQ4MTYyMiM1MSMkMSMkOCMkOTIkMzgxOTYxIzExIyQxIyQ3IyQ3OSQyNjE0ODEjNTEjJDEjJDYjJDgz",
+        "note": "의료기관 공개데이터를 재게시한 자료의 건물 대표 위치. 사진 속 주소판 67 및 오송생명3로 67 주소와 대조."
+      },
+      "sources": [
+        {
+          "url": "https://council.cheongju.go.kr/photogallery/content/detailsSearch.html?fidx=4907",
+          "note": "2025-03-19 행사일과 오송생명과학단지 건강증진형 보건지소 행사 장소를 확인."
+        }
+      ],
+      "photo": {
+        "src": "assets/photos/osong-health-2025.jpg",
+        "alt": "오송생명과학단지 보건지소 입구 앞에서 개소식 리본을 든 사람들과 2025년 3월 19일 안내 현수막",
+        "caption": "오송생명과학단지 보건지소 · 2025.03.19 개소식",
+        "title": "오송생명과학단지 건강증진형 보건지소 개소식 사진 10",
+        "author": "청주시청",
+        "date": "2025-03-19",
+        "dateKind": "event",
+        "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+        "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=113&ctgryNo=615&photoInfoNo=72150",
+        "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/670527.do",
+        "photoId": "670527",
+        "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+        "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+        "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+        "preserveOriginal": true,
+        "attribution": "사진: 청주시청 · 오송생명과학단지 건강증진형 보건지소 개소식 사진 10 · 2025-03-19 행사 · 공공누리 제2유형",
+        "width": 1192,
+        "height": 795
+      },
+      "roleLabel": "이웃의 건강을 도와요"
+    },
+    {
+      "id": "center",
+      "number": "05",
+      "name": "오송읍 행정복지센터",
+      "shortName": "행정복지센터",
+      "emoji": "🏡",
+      "coords": [
+        36.6091807,
+        127.3245567
+      ],
+      "mapGroup": "center",
+      "address": "충청북도 청주시 흥덕구 오송읍 가로수로 174",
+      "short": "마을의 일을 돕는 곳",
+      "desc": "오송읍 행정복지센터는 주민들이 생활에 필요한 도움을 받는 곳이에요. 마을 사람들이 함께 모여 마을의 일을 이야기하기도 해요.",
+      "people": "일하는 분들은 필요한 서류와 생활 정보를 안내해요. 사진에서는 주민들이 모여 이야기를 나누고 있어요.",
+      "question": "우리 마을이 더 좋아지도록 어떤 이야기를 전하고 싶나요?",
+      "observe": "사진에서 테이블과 이야기하는 사람들을 찾아보세요. 다른 사람의 말을 들을 때 어떤 모습이면 좋을까요?",
+      "pdfRole": "회의 테이블·사람들·전광판을 관찰합니다. 역할 예: 주민 이야기 듣기, 생활 정보 안내하기.",
+      "quiz": {
+        "question": "행정복지센터는 어떤 곳일까요?",
+        "options": [
+          "기차를 타고 먼 곳으로 가는 곳",
+          "주민에게 생활에 필요한 도움을 주는 곳",
+          "물놀이를 하는 곳"
+        ],
+        "answer": 1,
+        "explanation": "행정복지센터는 주민의 이야기를 듣고 서류와 생활 정보를 안내하며 마을의 일을 도와요.",
+        "hint": "사진 속 사람들은 마을 이야기를 함께 나누고 있어요."
+      },
+      "coordinateSource": {
+        "url": "https://www.cheongju.go.kr/osong/contents.do?key=2194",
+        "note": "기존 지도 자료의 시설 대표 좌표를 유지하고 청주시 오송읍 공식 오시는 길의 가로수로 174 주소와 대조. 회의실이나 촬영 지점의 별도 좌표는 아닙니다."
+      },
+      "sources": [
+        {
+          "url": "https://www.newsis.com/view/NISX20260802_0003733243",
+          "note": "2026-08-03 오전 10시10분 주민과의 대화 장소가 오송읍 행정복지센터임을 확인."
+        }
+      ],
+      "photo": {
+        "src": "assets/photos/osong-center-2026.jpg",
+        "alt": "오송읍 행정복지센터 회의실에서 테이블을 둘러싸고 주민 이야기를 나누는 사람들과 행사 전광판",
+        "caption": "오송읍 행정복지센터 주민과의 대화 · 2026.08.03 행사일",
+        "title": "오송읍 주민과의 대화(민선9기 초도순방) 사진 11",
+        "author": "청주시청",
+        "date": "2026-08-03",
+        "dateKind": "event",
+        "dateEvidence": "청주시 사진DB 사진목록의 행사일. EXIF 촬영일을 확인한 값은 아닙니다.",
+        "sourceUrl": "https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=84&ctgryNo=605&photoInfoNo=72739",
+        "downloadUrl": "https://photo.cheongju.go.kr/photoImageView/preview/689062.do",
+        "photoId": "689062",
+        "license": "공공누리 제2유형 (출처표시·상업적 이용금지)",
+        "licenseUrl": "https://www.kogl.or.kr/info/licenseType2.do",
+        "changes": "없음. 공개된 이미지 파일을 그대로 저장하고 원래 비율로 표시합니다.",
+        "preserveOriginal": true,
+        "attribution": "사진: 청주시청 · 오송읍 주민과의 대화(민선9기 초도순방) 사진 11 · 2026-08-03 행사 · 공공누리 제2유형",
+        "width": 1192,
+        "height": 795
+      },
+      "roleLabel": "마을 생활을 도와요"
+    }
+  ]
+}
